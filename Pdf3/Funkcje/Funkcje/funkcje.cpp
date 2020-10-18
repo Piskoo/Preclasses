@@ -33,3 +33,12 @@ void PrzyjmijTabliceIRozmiarOdwrocTablice(double tab[], const int N) {
 		std::cout << tab[i] << " ";
 	}
 }
+
+void PrzyjmijVectorOdwrocVector(std::vector<double> vector) {
+	for (int i = 0; i < vector.size() / 2; i++) {
+		std::swap(vector[i], vector[vector.size() - i - 1]);
+	}
+		for (int i = 0; i < vector.size(); i++) {
+			std::cout << vector[i] << " ";
+		}
+}

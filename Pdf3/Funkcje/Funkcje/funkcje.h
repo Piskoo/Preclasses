@@ -1,5 +1,7 @@
 #ifndef FUNKCJE_H
 #define FUNKCJE_H
+ 
+#include <vector>
 
 /**
 * Proszê napisaæ funkcjê, która przyjmuje piêæ liczb 
@@ -19,6 +21,14 @@ double PrzymijTabliceIRozmiarZwrocMin(double tab[], const int N);
 *kolejnoœæ elementów w tablicy
 **/
 void PrzyjmijTabliceIRozmiarOdwrocTablice(double tab[], const int N);
+
+/**
+* Proszê napisz¹ funkcjê, która przyjmuje wektor liczb zmiennoprzecinkowych i 
+*zwraca wektor tych¿e liczb w odwrotnej kolejnoœci.
+**/
+void PrzyjmijVectorOdwrocVector(std::vector<double> vector);
+
+
 
 
 
