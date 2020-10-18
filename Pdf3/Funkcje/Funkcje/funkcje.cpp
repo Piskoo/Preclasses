@@ -42,3 +42,22 @@ void PrzyjmijVectorOdwrocVector(std::vector<double> vector) {
 			std::cout << vector[i] << " ";
 		}
 }
+
+void PrzyjmijNZwrocWektor(const int N) {
+	std::vector<int> LiczbyPierwsze;
+	for (int i = 0; i < N; i++) { // Wpisywanie do vectora
+		for (int j = 2 ; ;) { // Wybor kolejnej liczby do dzielenia
+			if (j == 2) LiczbyPierwsze.push_back(j);
+			j++;
+			for (int k = 2;k < j ; k++) { // Wybor dzielnika 
+				if (j % k == 0) break;
+				if (k-1 == j) LiczbyPierwsze.push_back(5);
+				}
+			
+			break;
+			}
+		
+		std::cout << LiczbyPierwsze[i] << " ";
+	}
+		
+}

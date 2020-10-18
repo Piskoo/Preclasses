@@ -12,6 +12,7 @@ int main(){
 	double e = 76.88888;
 	double Minimum;
 	const int N = 5;
+	const int M = 9;
 	double Tablica[N] = { a+1,b+1,c+1,d+1,e+1 };
 	std::vector<double> Vector = { a + 2, b + 2, c + 2, d + 2, e + 2 };
 
@@ -22,6 +23,8 @@ int main(){
 	PrzyjmijTabliceIRozmiarOdwrocTablice(Tablica, N);
 	std::cout << std::endl;
 	PrzyjmijVectorOdwrocVector(Vector);
+	std::cout << std::endl;
+	PrzyjmijNZwrocWektor(M);
 	
 
 
