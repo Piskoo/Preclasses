@@ -11,9 +11,14 @@ double PrzyjmijPiecZmiennychZwrocMin(double a, double b, double c, double d, dou
 * Proszê napisaæ funkcjê, która przyjmuje tablicê liczb 
 * zmiennoprzecinkowych i rozmiar tablicy, i zwraca ich minimum.
 **/
-double PrzymijTabliceIRozmiarZwrocMin(double tab[], int N);
+double PrzymijTabliceIRozmiarZwrocMin(double tab[], const int N);
 
-
+/**
+*Proszê napisaæ funkcjê, która przyjmuje tablicê liczb 
+*zmiennoprzecinkowe i rozmiar tablicy, i odwraca
+*kolejnoœæ elementów w tablicy
+**/
+void PrzyjmijTabliceIRozmiarOdwrocTablice(double tab[], const int N);
 
 
 

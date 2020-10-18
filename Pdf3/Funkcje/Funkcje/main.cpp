@@ -18,6 +18,8 @@ int main(){
 	std::cout << Minimum << std::endl;
 	Minimum = PrzymijTabliceIRozmiarZwrocMin(Tablica, N);
 	std::cout << Minimum << std::endl;
+	PrzyjmijTabliceIRozmiarOdwrocTablice(Tablica, N);
+	
 
 
 

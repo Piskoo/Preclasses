@@ -1,4 +1,5 @@
 #include <algorithm>
+#include <iostream>
 
 #include "funkcje.h"
 
@@ -13,7 +14,7 @@ double PrzyjmijPiecZmiennychZwrocMin(double a, double b, double c, double d, dou
 	return Min;
 }
 
-double PrzymijTabliceIRozmiarZwrocMin(double tab[], int N) {
+double PrzymijTabliceIRozmiarZwrocMin(double tab[], const int N) {
 	double Min = tab[0];
 
 	for (int i = 1; i < N; i++) {
@@ -22,4 +23,13 @@ double PrzymijTabliceIRozmiarZwrocMin(double tab[], int N) {
 		}
 	}
 	return Min;
+}
+
+void PrzyjmijTabliceIRozmiarOdwrocTablice(double tab[], const int N) {
+	for (int i = 0; i < N / 2; i++) {
+		std::swap(tab[i], tab[N - i - 1]);
+	}
+	for (int i = 0; i < N; i++) {
+		std::cout << tab[i] << " ";
+	}
 }
