@@ -12,3 +12,14 @@ double PrzyjmijPiecZmiennychZwrocMin(double a, double b, double c, double d, dou
 		}
 	return Min;
 }
+
+double PrzymijTabliceIRozmiarZwrocMin(double tab[], int N) {
+	double Min = tab[0];
+
+	for (int i = 1; i < N; i++) {
+		if (Min > tab[i]) {
+			Min = tab[i];
+		}
+	}
+	return Min;
+}
